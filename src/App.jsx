@@ -232,27 +232,31 @@ export default function App() {
 
 </section>
 {/* PROJECTS */}
+{/* PROJECTS */}
 <section id="projects" className="section">
   <h2 className="section-title">Projects</h2>
 
   <div className="projects-grid">
-    {repos.map(repo => (
-      <a
-        key={repo.id}
-        href={repo.html_url}
-        target="_blank"
-        rel="noreferrer"
-        className="project-card"
-      >
-        <h3>{repo.name}</h3>
-        <p>{repo.description || "No description provided."}</p>
-        <span className="repo-lang">{repo.language}</span>
-      </a>
-    ))}
+    {repos
+      .filter(repo => repo.description && repo.description.trim() !== "")
+      .map(repo => (
+        <a
+          key={repo.id}
+          href={repo.html_url}
+          target="_blank"
+          rel="noreferrer"
+          className="project-card"
+        >
+          <h3>{repo.name}</h3>
+          <p>{repo.description}</p>
+          {repo.language && (
+            <span className="repo-lang">{repo.language}</span>
+          )}
+        </a>
+      ))}
   </div>
 </section>
 
-      
 
         {/* CONTACT */}
         <section id="contact" className="section">
