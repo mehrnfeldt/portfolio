@@ -232,7 +232,6 @@ export default function App() {
 
 </section>
 {/* PROJECTS */}
-{/* PROJECTS */}
 <section id="projects" className="section">
   <h2 className="section-title">Projects</h2>
 
@@ -267,7 +266,7 @@ export default function App() {
           
 
           <div className="contact-buttons">
-            <a href="Ehrnfeldt Resume 2026.pdf" download className="btn">
+            <a href="/portfolio/EhrnfeldtResume2026.pdf" download className="btn">
               Download Resume
             </a>
             <a
