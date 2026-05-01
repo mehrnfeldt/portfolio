@@ -216,6 +216,10 @@ export default function App() {
       <li>Maintained competitive performance through daily training, developing consistency and high-pressure execution skills.</li>
       <li>Contributed to a collaborative, high-performance team environment and supported teammates in achieving shared goals.</li>
       <li>Applied athletic mindset to academic and technical problem-solving, improving focus and adaptability.</li>
+      <li>Multiple program record holder (100 Fly, 200 Fly, 200/400/800 Free Relays).</li>
+      <li>CAA medalist in individual butterfly events and relays. Multiple CAA Swimmer of the Week honors.</li>
+      <li>2026 CAA Champion and Conference Record Holder in the 200 Free Relay.</li>
+      <li>Earned CAA Commissioner’s Academic High Honors.</li>
     </ul>
   </div>
 
