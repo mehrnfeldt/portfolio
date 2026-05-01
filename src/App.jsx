@@ -267,7 +267,7 @@ export default function App() {
           
 
           <div className="contact-buttons">
-            <a href="/Ehrnfeldt Resume 2026.pdf" download className="btn">
+            <a href="Ehrnfeldt Resume 2026.pdf" download className="btn">
               Download Resume
             </a>
             <a
