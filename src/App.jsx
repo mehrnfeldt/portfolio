@@ -238,6 +238,7 @@ export default function App() {
 <section id="experience" className="section">
   <h2 className="section-title">Relevant Coursework</h2>
 
+<div className="coursework-grid">
   <div className="experience-item">
     <h3>Core Computer Science</h3>
     <ul>
@@ -280,6 +281,7 @@ export default function App() {
       <li>Numerical Analysis I/II</li>
       <li>Discrete Mathematics</li>
     </ul>
+  </div>
   </div>
 </section> 
    

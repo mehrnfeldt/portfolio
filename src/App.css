@@ -222,3 +222,26 @@ footer {
   text-align: center;
   color: var(--subtle);
 }
+
+
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.experience-item h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-item li {
+  margin-bottom: 6px;
+}
