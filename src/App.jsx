@@ -189,11 +189,11 @@ export default function App() {
     <h3>Race-Walking Analysis & Compliance Evaluation — Senior Design Project</h3>
     <p className="date">September 2025 – Present</p>
     <ul>
-      <li>Developed a Python-based computer vision system using YOLOv8, MediaPipe, and OpenCV to detect race-walking rule violations such as bent knees and loss of ground contact.</li>
-      <li>Expanded a full-stack, cloud-native application by extending its AWS backend (Lambda, API Gateway, S3) for scalable video processing and athlete analysis.</li>
-      <li>Improved ML pipeline accuracy through feature engineering, iterative model tuning, and SageMaker-based training workflows.</li>
-      <li>Built a dynamic React.js frontend for real-time visualization, athlete feedback, and performance analytics.</li>
-      <li>Implemented DynamoDB for metadata storage and Athena for SQL querying of JSON-based results stored in S3.</li>
+      <li>Enhanced an existing computer vision system by rapidly learning race-walking biomechanics and competition regulations to inform feature development.</li>
+	    <li>Expanded a full-stack, cloud-native application by extending its serverless AWS back end, leveraging API Gateway, Lambda, and S3 for scalable video processing and storage.</li>
+	    <li>Improved the machine-learning pipeline—built with AWS SageMaker and Mediapipe—to increase accuracy in detecting rule violations such as bent knees and loss of ground contact.</li>
+      <li>Developed new features for a dynamic, responsive front end using React.js, JavaScript, and Bootstrap, improving usability and visualization of analysis results.</li>
+      <li>Utilized AWS DynamoDB for managing user and project metadata and implemented AWS Athena to enable efficient SQL querying of JSON-based results stored in S3.</li>
     </ul>
   </div>
 
@@ -201,10 +201,9 @@ export default function App() {
     <h3>PennDOT — Summer Transportation Intern</h3>
     <p className="date">Summer 2023</p>
     <ul>
-      <li>Assisted with roadway inspection, field data collection, and documentation for state transportation projects.</li>
-      <li>Analyzed pavement quality, compliance metrics, and vehicle specifications to support engineering decisions.</li>
-      <li>Verified inspection reports and contributed to workflow optimization across multi-department engineering teams.</li>
-      <li>Gained hands-on experience with public-sector infrastructure operations and safety compliance.</li>
+      <li>Assisted in the maintenance and inspection of regulatory, directional, advisory signs on state roads.</li>
+      <li>Provided safety to coworkers by controlling traffic flow with flagging devices.</li>
+      <li>Assisted in the setup and removal of work zones with traffic control devices.</li>
     </ul>
   </div>
 
@@ -235,6 +234,57 @@ export default function App() {
   </div>
 
 </section>
+
+<section id="experience" className="section">
+  <h2 className="section-title">Relevant Coursework</h2>
+
+  <div className="experience-item">
+    <h3>Core Computer Science</h3>
+    <ul>
+      <li>Data Structures</li>
+      <li>Algorithms & Analysis</li>
+      <li>Systems Programming</li>
+      <li>Systems Architecture</li>
+      <li>Programming Languages</li>
+      <li>Advanced Programming Tools & Techniques</li>
+      <li>Web Development</li>
+      <li>Advanced Web Development</li>
+      <li>Intro to Software Engineering</li>
+      <li>Software Architecture I</li>
+    </ul>
+  </div>
+  <div className="experience-item">
+    <h3>AI & Machine Learning</h3>
+    <ul>
+      <li>Artificial Intelligence</li>
+      <li>Machine Learning</li>
+      <li>Reinforcement Learning</li>
+      <li>Data Structures & Algorithms I</li>
+    </ul>
+  </div>
+  <div className="experience-item">
+    <h3>Data Science & Analystics</h3>
+    <ul>
+      <li>Introduction to Data Science</li>
+      <li>Data Science Programming</li>
+      <li>Probability & Statistics I/II</li>
+      <li>Business Statistics I/II</li>
+    </ul>
+  </div>
+  <div className="experience-item">
+    <h3>Mathematics</h3>
+    <ul>
+      <li>Calculus I/III/III</li>
+      <li>Multivariate Calculus</li>
+      <li>Linear Algebra</li>
+      <li>Numerical Analysis I/II</li>
+      <li>Discrete Mathematics</li>
+    </ul>
+  </div>
+</section> 
+   
+
+
 {/* PROJECTS */}
 <section id="projects" className="section">
   <h2 className="section-title">Projects</h2>
@@ -275,7 +325,6 @@ export default function App() {
             </a>
             <a
               href="https://github.com/mehrnfeldt"download className="btn">
-          
               GitHub Profile
             </a>
             <a
