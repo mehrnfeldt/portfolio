@@ -38,15 +38,8 @@ export default function App() {
   <h1 className="name">Megan Ehrnfeldt</h1>
 
   <p className="qualifications">
-    B.S. in Computer Science, Drexel University — June 2026  
-    Concentrations: Artificial Intelligence & Machine Learning, Algorithms & Theory  
-    Minors: Data Science, Mathematics
-  </p>
-  <p className="qualifications">
-    Concentrations: Artificial Intelligence & Machine Learning, Algorithms & Theory  
-    Minors: Data Science, Mathematics
-  </p>
-  <p className="qualifications">
+    B.S. in Computer Science, Drexel University — June 2026  <br/>
+    Concentrations: Artificial Intelligence & Machine Learning, Algorithms & Theory  <br/>
     Minors: Data Science, Mathematics
   </p>
 
