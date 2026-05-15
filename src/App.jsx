@@ -42,6 +42,13 @@ export default function App() {
     Concentrations: Artificial Intelligence & Machine Learning, Algorithms & Theory  
     Minors: Data Science, Mathematics
   </p>
+  <p className="qualifications">
+    Concentrations: Artificial Intelligence & Machine Learning, Algorithms & Theory  
+    Minors: Data Science, Mathematics
+  </p>
+  <p className="qualifications">
+    Minors: Data Science, Mathematics
+  </p>
 
   <p className="tagline">
     I’m a Computer Science graduate specializing in AI, Machine Learning, and full‑stack development.  
