@@ -234,6 +234,7 @@ footer {
 
 .project-card {
   background: white;
+  margin: 2px;
   border: 2px solid var(--border);
   padding: 20px;
   border-radius: 10px;
@@ -249,12 +250,13 @@ footer {
   box-shadow: 0 4px 14px rgba(0,0,0,0.1);
 }
 .project-title-link h3 {
-  transition: color .2s, text-decoration .2s;
+  color: var(--text);
+  text-decoration: none;
+  transition: color .2s;
 }
 
 .project-title-link:hover h3 {
   color: var(--pink);
-  text-decoration: underline;
 }
 
 .live-btn {
