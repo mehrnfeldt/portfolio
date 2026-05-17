@@ -296,28 +296,31 @@ export default function App() {
       .filter(repo => repo.description && repo.description.trim() !== "")
       .map(repo => {
         const homepage =
-          repo.homepage && repo.homepage.trim() !== "" && repo.homepage !== "null"
+          repo.homepage &&
+          repo.homepage.trim() !== "" &&
+          repo.homepage !== "null"
             ? repo.homepage
             : null;
 
         return (
           <div key={repo.id} className="project-card">
-            {/* Main GitHub link */}
+            {/* Title links to GitHub */}
             <a
               href={repo.html_url}
               target="_blank"
               rel="noreferrer"
-              className="project-main-link"
+              className="project-title-link"
             >
               <h3>{repo.name}</h3>
-              <p>{repo.description}</p>
-
-              {repo.language && (
-                <span className="repo-lang">{repo.language}</span>
-              )}
             </a>
 
-            {/* Live site button (only if homepage exists) */}
+            <p>{repo.description}</p>
+
+            {repo.language && (
+              <span className="repo-lang">{repo.language}</span>
+            )}
+
+            {/* Live Site button */}
             {homepage && (
               <a
                 href={homepage}
@@ -325,7 +328,7 @@ export default function App() {
                 rel="noreferrer"
                 className="live-btn"
               >
-                Live Demo
+                Live Site
               </a>
             )}
           </div>
@@ -333,6 +336,7 @@ export default function App() {
       })}
   </div>
 </section>
+
 
 
 
