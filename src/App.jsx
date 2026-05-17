@@ -40,7 +40,7 @@ export default function App() {
   <p className="qualifications">
     B.S. in Computer Science, Drexel University — June 2026  <br/>
     Concentrations: Artificial Intelligence & Machine Learning, Algorithms & Theory  <br/>
-    Minors: Data Science, Mathematics
+    Minors: Data Science and Mathematics
   </p>
 
   <p className="tagline">
