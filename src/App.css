@@ -164,12 +164,15 @@ body {
 
 .repo-lang {
   display: inline-block;
-  margin: 0;
-  padding: 4px 10px;
+  margin: 0 0 6px;
+  padding: 3px 9px;
   background: var(--pink);
   color: white;
   border-radius: 6px;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
+  line-height: 1.1;
+  font-weight: 700;
+  align-self: flex-start;
 }
 
 /* CONTACT */
@@ -240,7 +243,6 @@ footer {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
   transition: transform .2s, box-shadow .2s, border-color .2s;
 }
 
@@ -255,20 +257,34 @@ footer {
   color: inherit;          
 }
 
+.project-title-link h3 {
+  margin: 0 0 54px;
+  text-decoration: none;
+}
+
 .project-title-link:hover h3 {
   color: var(--pink);
+  text-decoration: none;
+}
+
+.project-card p {
+  margin: 0 0 24px;
 }
 
 .live-btn {
-  padding: 6px 12px;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 16px;
   background: var(--pink);
   color: white;
   border-radius: 6px;
   text-decoration: none;
   font-size: 0.85rem;
-  width: fit-content;
+  width: 100%;
+  max-width: 270px;
+  text-align: center;
   transition: 0.2s ease;
-  margin: 0; /* remove extra spacing */
+  margin: 0;
 }
 
 .live-btn:hover {
