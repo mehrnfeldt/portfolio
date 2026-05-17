@@ -295,39 +295,45 @@ export default function App() {
     {repos
       .filter(repo => repo.description && repo.description.trim() !== "")
       .map(repo => {
-        // GitHub homepage field (website link)
-        const homepage = repo.homepage?.trim();
-
-        // Use homepage if it exists and is not empty/null
-        const projectLink =
-          homepage && homepage !== "null" && homepage !== ""
-            ? homepage
-            : repo.html_url;
+        const homepage =
+          repo.homepage && repo.homepage.trim() !== "" && repo.homepage !== "null"
+            ? repo.homepage
+            : null;
 
         return (
-          <a
-            key={repo.id}
-            href={projectLink}
-            target="_blank"
-            rel="noreferrer"
-            className="project-card"
-          >
-            <h3>{repo.name}</h3>
-            <p>{repo.description}</p>
+          <div key={repo.id} className="project-card">
+            {/* Main GitHub link */}
+            <a
+              href={repo.html_url}
+              target="_blank"
+              rel="noreferrer"
+              className="project-main-link"
+            >
+              <h3>{repo.name}</h3>
+              <p>{repo.description}</p>
 
-            {repo.language && (
-              <span className="repo-lang">{repo.language}</span>
-            )}
+              {repo.language && (
+                <span className="repo-lang">{repo.language}</span>
+              )}
+            </a>
 
-            {/* Optional: show a badge if a live site exists */}
-            {homepage && homepage !== "null" && homepage !== "" && (
-              <span className="live-badge">Live Site</span>
+            {/* Live site button (only if homepage exists) */}
+            {homepage && (
+              <a
+                href={homepage}
+                target="_blank"
+                rel="noreferrer"
+                className="live-btn"
+              >
+                Live Demo
+              </a>
             )}
-          </a>
+          </div>
         );
       })}
   </div>
 </section>
+
 
 
         {/* CONTACT */}
