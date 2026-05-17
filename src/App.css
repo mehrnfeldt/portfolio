@@ -245,15 +245,9 @@ footer {
 .experience-item li {
   margin-bottom: 6px;
 }
-.project-card {
-  background: #ffffff10;
-  border: 1px solid #ffffff20;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
+
+
 
 .project-title-link {
   text-decoration: none;
