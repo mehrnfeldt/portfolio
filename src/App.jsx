@@ -295,9 +295,14 @@ export default function App() {
     {repos
       .filter(repo => repo.description && repo.description.trim() !== "")
       .map(repo => {
-        const projectLink = repo.homepage && repo.homepage.trim() !== ""
-          ? repo.homepage
-          : repo.html_url;
+        // GitHub homepage field (website link)
+        const homepage = repo.homepage?.trim();
+
+        // Use homepage if it exists and is not empty/null
+        const projectLink =
+          homepage && homepage !== "null" && homepage !== ""
+            ? homepage
+            : repo.html_url;
 
         return (
           <a
@@ -309,8 +314,14 @@ export default function App() {
           >
             <h3>{repo.name}</h3>
             <p>{repo.description}</p>
+
             {repo.language && (
               <span className="repo-lang">{repo.language}</span>
+            )}
+
+            {/* Optional: show a badge if a live site exists */}
+            {homepage && homepage !== "null" && homepage !== "" && (
+              <span className="live-badge">Live Site</span>
             )}
           </a>
         );
