@@ -294,21 +294,27 @@ export default function App() {
   <div className="projects-grid">
     {repos
       .filter(repo => repo.description && repo.description.trim() !== "")
-      .map(repo => (
-        <a
-          key={repo.id}
-          href={repo.html_url}
-          target="_blank"
-          rel="noreferrer"
-          className="project-card"
-        >
-          <h3>{repo.name}</h3>
-          <p>{repo.description}</p>
-          {repo.language && (
-            <span className="repo-lang">{repo.language}</span>
-          )}
-        </a>
-      ))}
+      .map(repo => {
+        const projectLink = repo.homepage && repo.homepage.trim() !== ""
+          ? repo.homepage
+          : repo.html_url;
+
+        return (
+          <a
+            key={repo.id}
+            href={projectLink}
+            target="_blank"
+            rel="noreferrer"
+            className="project-card"
+          >
+            <h3>{repo.name}</h3>
+            <p>{repo.description}</p>
+            {repo.language && (
+              <span className="repo-lang">{repo.language}</span>
+            )}
+          </a>
+        );
+      })}
   </div>
 </section>
 
