@@ -164,7 +164,7 @@ body {
 
 .repo-lang {
   display: inline-block;
-  margin-top: 10px;
+  margin: 0;
   padding: 4px 10px;
   background: var(--pink);
   color: white;
@@ -234,12 +234,12 @@ footer {
 
 .project-card {
   background: white;
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   transition: transform .2s, box-shadow .2s, border-color .2s;
 }
 
@@ -248,9 +248,12 @@ footer {
   transform: translateY(-4px);
   box-shadow: 0 4px 14px rgba(0,0,0,0.1);
 }
-.project-title-link {
-  text-decoration: none;
-  color: inherit;
+.project-title-link h3 {
+  transition: color .2s;
+}
+
+.project-title-link:hover h3 {
+  color: var(--pink);
 }
 
 .live-btn {
