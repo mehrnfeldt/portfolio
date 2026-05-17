@@ -162,21 +162,6 @@ body {
   gap: 20px;
 }
 
-.project-card {
-  border: 1px solid var(--border);
-  padding: 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: var(--text);
-  transition: transform .2s, box-shadow .2s;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-  border-color: var(--pink);
-}
-
 .repo-lang {
   display: inline-block;
   margin-top: 10px;
@@ -247,8 +232,22 @@ footer {
 }
 
 
+.project-card {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
 
-
+.project-card:hover {
+  border-color: var(--pink);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
 .project-title-link {
   text-decoration: none;
   color: inherit;
